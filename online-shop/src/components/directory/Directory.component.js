@@ -40,7 +40,6 @@ export default class Directory extends Component {
 		]
 	};
 	render() {
-		console.log(this.props);
 		return (
 			<div className="directory-menu">
 				{this.props.sections.map((section) => <MenuItem key={section.id} section={{ ...section }} />)}
