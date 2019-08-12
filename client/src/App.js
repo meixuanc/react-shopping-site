@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user.selectors';
+import { createStructuredSelector } from 'reselect';
 import Header from './components/header/Header.component';
 import HomePage from './pages/homepage/HomePage.component';
 import ShopPage from './pages/shop/ShopPage.component';
