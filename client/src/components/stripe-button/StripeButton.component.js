@@ -19,9 +19,7 @@ const StripeButton = ({ price, cartItems, clearItem }) => {
         })
             .then((response) => {
                 alert('Payment Successful');
-                {
-                    cartItems.map((cartItem) => clearItem(cartItem));
-                }
+                cartItems.map((cartItem) => clearItem(cartItem));
             })
             .catch((error) => {
                 console.log('Payment error: ', JSON.parse(error));
