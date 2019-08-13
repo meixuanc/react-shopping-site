@@ -10,7 +10,7 @@ import SignInUp from './pages/sign-in-up/SignInUp.component';
 import CheckOutPage from './pages/checkout/CheckOut.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
-import './App.css';
+import { GlobalStyle } from './global.styles';
 
 const App = ({ currentUser, setCurrentUser }) => {
     useEffect(
@@ -37,12 +37,14 @@ const App = ({ currentUser, setCurrentUser }) => {
 
     return (
         <div>
+            <GlobalStyle />
             <Header />
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/shop" component={ShopPage} />
                 <Route exact path="/checkout" component={CheckOutPage} />
                 <Route exact path="/signin" render={() => (currentUser ? <Redirect to="/" /> : <SignInUp />)} />
+                <Route render={() => <h1>The page you looking for is not exist</h1>} />
             </Switch>
         </div>
     );

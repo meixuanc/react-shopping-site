@@ -9,6 +9,12 @@ export const HeaderContainer = styled.div`
     align-items: center;
     margin-bottom: 25px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 800px) {
+        height: 60px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
 `;
 
 export const LogoContainer = styled(Link)`
@@ -16,6 +22,11 @@ export const LogoContainer = styled(Link)`
 	width: 70px;
     padding: 25px;
     opacity: 0.85;
+
+    @media screen and (max-width: 800px) {
+        width: 50px;
+        padding: 0;
+    }
 `;
 
 export const OptionsContainer = styled.div`
@@ -24,6 +35,10 @@ export const OptionsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
 `;
 
 export const OptionLink = styled(Link)`
@@ -32,4 +47,9 @@ export const OptionLink = styled(Link)`
     font-size: 18px;
     color: black;
     cursor: pointer;
+
+    @media screen and (max-width: 800px) {        
+        padding: 5px 5px;
+        font-size: 15px;
+    }
 `;
