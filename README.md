@@ -14,12 +14,12 @@
 
 * React related code is located in client folder
 
-  ![3](/Users/meixuanchen/Desktop/React/react-shopping-site/snapshot/3.png)
+  ![3](./snapshot/3.png)
 
-![1](/Users/meixuanchen/Desktop/React/react-shopping-site/snapshot/1.png)
+![1](./snapshot/1.png)
 
-![4](/Users/meixuanchen/Desktop/React/react-shopping-site/snapshot/4.png)
+![4](./snapshot/4.png)
 
-![2](/Users/meixuanchen/Desktop/React/react-shopping-site/snapshot/2.png)
+![2](./snapshot/2.png)
 
-![5](/Users/meixuanchen/Desktop/React/react-shopping-site/snapshot/5.png)
+![5](./snapshot/5.png)
