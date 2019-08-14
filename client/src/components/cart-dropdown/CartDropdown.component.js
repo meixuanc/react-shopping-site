@@ -9,6 +9,11 @@ import CartItem from '../cart-item/CartItem.component';
 import './CartDropdown.styles.scss';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => {
+    const handleClick = () => {
+        history.push('/checkout');
+        dispatch(toggleCartHidden());
+    };
+
     return (
         <div className="cart-dropdown">
             <div className="cart-items">
@@ -18,14 +23,7 @@ const CartDropdown = ({ cartItems, history, dispatch }) => {
                     <span className="empty-message">Your cart is empty</span>
                 )}
             </div>
-            <CustomButton
-                onClick={() => {
-                    history.push('/checkout');
-                    dispatch(toggleCartHidden());
-                }}
-            >
-                Checkout
-            </CustomButton>
+            <CustomButton onClick={handleClick}>Checkout</CustomButton>
         </div>
     );
 };
